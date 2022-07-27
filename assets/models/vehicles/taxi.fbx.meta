@@ -1,0 +1,184 @@
+{
+  "ver": "2.2.0",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f",
+  "files": [],
+  "subMetas": {
+    "50656": {
+      "importer": "gltf-material",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@50656",
+      "displayName": "",
+      "id": "50656",
+      "name": "paintYellow.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bcca5": {
+      "importer": "gltf-mesh",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@bcca5",
+      "displayName": "",
+      "id": "bcca5",
+      "name": "UnnamedMesh.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43adf": {
+      "importer": "gltf-material",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@43adf",
+      "displayName": "",
+      "id": "43adf",
+      "name": "plastic.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "258bd": {
+      "importer": "gltf-material",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@258bd",
+      "displayName": "",
+      "id": "258bd",
+      "name": "lightFront.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0ee4f": {
+      "importer": "gltf-material",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@0ee4f",
+      "displayName": "",
+      "id": "0ee4f",
+      "name": "_defaultMat.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4d9d": {
+      "importer": "gltf-material",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@d4d9d",
+      "displayName": "",
+      "id": "d4d9d",
+      "name": "window.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "54cc9": {
+      "importer": "gltf-material",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@54cc9",
+      "displayName": "",
+      "id": "54cc9",
+      "name": "lightBack.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e71e2": {
+      "importer": "gltf-material",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@e71e2",
+      "displayName": "",
+      "id": "e71e2",
+      "name": "carTire.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8b557": {
+      "importer": "gltf-scene",
+      "uuid": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@8b557",
+      "displayName": "",
+      "id": "8b557",
+      "name": "taxi.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "promoteSingleRootNode": true
+    },
+    "redirect": "e8d847ac-8327-4680-9ca0-fe2a87280a5f@8b557",
+    "assetFinder": {
+      "meshes": [
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@bcca5"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@43adf",
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@50656",
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@258bd",
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@0ee4f",
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@d4d9d",
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@54cc9",
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@e71e2"
+      ],
+      "scenes": [
+        "e8d847ac-8327-4680-9ca0-fe2a87280a5f@8b557"
+      ]
+    },
+    "meshOptimizer": true,
+    "dumpMaterials": false
+  }
+}

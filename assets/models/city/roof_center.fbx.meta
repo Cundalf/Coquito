@@ -1,0 +1,93 @@
+{
+  "ver": "2.2.0",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d8ad66c5-50d2-491f-bfe8-1c9f8cb1ba7d",
+  "files": [],
+  "subMetas": {
+    "bcca5": {
+      "importer": "gltf-mesh",
+      "uuid": "d8ad66c5-50d2-491f-bfe8-1c9f8cb1ba7d@bcca5",
+      "displayName": "",
+      "id": "bcca5",
+      "name": "UnnamedMesh.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7bf25": {
+      "importer": "gltf-material",
+      "uuid": "d8ad66c5-50d2-491f-bfe8-1c9f8cb1ba7d@7bf25",
+      "displayName": "",
+      "id": "7bf25",
+      "name": "door.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "94dae": {
+      "importer": "gltf-scene",
+      "uuid": "d8ad66c5-50d2-491f-bfe8-1c9f8cb1ba7d@94dae",
+      "displayName": "",
+      "id": "94dae",
+      "name": "roof_center.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "promoteSingleRootNode": true,
+      "preferLocalTimeSpan": true
+    },
+    "redirect": "d8ad66c5-50d2-491f-bfe8-1c9f8cb1ba7d@94dae",
+    "assetFinder": {
+      "meshes": [
+        "d8ad66c5-50d2-491f-bfe8-1c9f8cb1ba7d@bcca5"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "d8ad66c5-50d2-491f-bfe8-1c9f8cb1ba7d@7bf25"
+      ],
+      "scenes": [
+        "d8ad66c5-50d2-491f-bfe8-1c9f8cb1ba7d@94dae"
+      ]
+    },
+    "disableMeshSplit": false,
+    "meshOptimizer": true,
+    "meshOptimizerOptions": {
+      "sa": false,
+      "kn": false,
+      "ke": false,
+      "noq": true,
+      "v": true
+    },
+    "dumpMaterials": false,
+    "depthWriteInAlphaModeBlend": false,
+    "useVertexColors": true
+  }
+}

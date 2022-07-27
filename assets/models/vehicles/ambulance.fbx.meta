@@ -1,0 +1,202 @@
+{
+  "ver": "2.2.0",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e",
+  "files": [],
+  "subMetas": {
+    "bcca5": {
+      "importer": "gltf-mesh",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@bcca5",
+      "displayName": "",
+      "id": "bcca5",
+      "name": "UnnamedMesh.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f8f3e": {
+      "importer": "gltf-material",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@f8f3e",
+      "displayName": "",
+      "id": "f8f3e",
+      "name": "paintWhite.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fd4dd": {
+      "importer": "gltf-material",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@fd4dd",
+      "displayName": "",
+      "id": "fd4dd",
+      "name": "paintRed.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43adf": {
+      "importer": "gltf-material",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@43adf",
+      "displayName": "",
+      "id": "43adf",
+      "name": "plastic.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0ee4f": {
+      "importer": "gltf-material",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@0ee4f",
+      "displayName": "",
+      "id": "0ee4f",
+      "name": "_defaultMat.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "258bd": {
+      "importer": "gltf-material",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@258bd",
+      "displayName": "",
+      "id": "258bd",
+      "name": "lightFront.material",
+      "userData": {
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4d9d": {
+      "importer": "gltf-material",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@d4d9d",
+      "displayName": "",
+      "id": "d4d9d",
+      "name": "window.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0d932": {
+      "importer": "gltf-material",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@0d932",
+      "displayName": "",
+      "id": "0d932",
+      "name": "lightBlue.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e71e2": {
+      "importer": "gltf-material",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@e71e2",
+      "displayName": "",
+      "id": "e71e2",
+      "name": "carTire.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c00cf": {
+      "importer": "gltf-scene",
+      "uuid": "4f0e73de-c57d-40b8-b792-623b61caa79e@c00cf",
+      "displayName": "",
+      "id": "c00cf",
+      "name": "ambulance.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "promoteSingleRootNode": true
+    },
+    "redirect": "4f0e73de-c57d-40b8-b792-623b61caa79e@c00cf",
+    "assetFinder": {
+      "meshes": [
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@bcca5"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@f8f3e",
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@fd4dd",
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@43adf",
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@0ee4f",
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@258bd",
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@d4d9d",
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@0d932",
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@e71e2"
+      ],
+      "scenes": [
+        "4f0e73de-c57d-40b8-b792-623b61caa79e@c00cf"
+      ]
+    },
+    "meshOptimizer": true,
+    "dumpMaterials": false,
+    "materialDumpDir": "db://assets/models/vehicles/Materials_ambulance"
+  }
+}

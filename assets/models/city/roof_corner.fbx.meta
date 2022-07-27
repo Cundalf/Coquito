@@ -1,0 +1,110 @@
+{
+  "ver": "2.2.0",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "9fa0d810-960e-49a6-9d9b-101e590a07df",
+  "files": [],
+  "subMetas": {
+    "bcca5": {
+      "importer": "gltf-mesh",
+      "uuid": "9fa0d810-960e-49a6-9d9b-101e590a07df@bcca5",
+      "displayName": "",
+      "id": "bcca5",
+      "name": "UnnamedMesh.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cb799": {
+      "importer": "gltf-material",
+      "uuid": "9fa0d810-960e-49a6-9d9b-101e590a07df@cb799",
+      "displayName": "",
+      "id": "cb799",
+      "name": "border.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7bf25": {
+      "importer": "gltf-material",
+      "uuid": "9fa0d810-960e-49a6-9d9b-101e590a07df@7bf25",
+      "displayName": "",
+      "id": "7bf25",
+      "name": "door.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a75ab": {
+      "importer": "gltf-scene",
+      "uuid": "9fa0d810-960e-49a6-9d9b-101e590a07df@a75ab",
+      "displayName": "",
+      "id": "a75ab",
+      "name": "roof_corner.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "fbx": {
+      "smartMaterialEnabled": false,
+      "promoteSingleRootNode": true,
+      "preferLocalTimeSpan": true
+    },
+    "redirect": "9fa0d810-960e-49a6-9d9b-101e590a07df@a75ab",
+    "assetFinder": {
+      "meshes": [
+        "9fa0d810-960e-49a6-9d9b-101e590a07df@bcca5"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "9fa0d810-960e-49a6-9d9b-101e590a07df@cb799",
+        "9fa0d810-960e-49a6-9d9b-101e590a07df@7bf25"
+      ],
+      "scenes": [
+        "9fa0d810-960e-49a6-9d9b-101e590a07df@a75ab"
+      ]
+    },
+    "disableMeshSplit": false,
+    "meshOptimizer": true,
+    "meshOptimizerOptions": {
+      "sa": false,
+      "kn": false,
+      "ke": false,
+      "noq": true,
+      "v": true
+    },
+    "dumpMaterials": false,
+    "depthWriteInAlphaModeBlend": false,
+    "useVertexColors": true
+  }
+}
