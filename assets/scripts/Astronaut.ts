@@ -1,8 +1,15 @@
-import { _decorator, Component, Animation, EventKeyboard, SkeletalAnimation, Input, input, CylinderCollider, ICollisionEvent, EventMouse, Camera, AudioSource, director } from 'cc';
+import { _decorator, Component, Animation, EventKeyboard, SkeletalAnimation, Input, input, CylinderCollider, ICollisionEvent, EventMouse, Camera, AudioSource, director, Enum } from 'cc';
 import { Enemy } from './Enemy';
 import { HubManager } from './HubManager';
+import { HubManagerExtraGame } from './HubManagerExtraGame';
+import { Item } from './Item';
 import { MovingDirection, DIRECTIONS } from './MovingDirection';
 const { ccclass, property } = _decorator;
+
+enum GAME_MODE {
+    SURVIVAL,
+    TIME_TRIAL
+}
 
 enum ASTRONAUT_ANIMS {
     IDLE,
@@ -13,6 +20,8 @@ enum ASTRONAUT_ANIMS {
     CROUCH,
     LIEDOWN
 }
+
+Enum(GAME_MODE);
 
 @ccclass('Astronaut')
 export class Astronaut extends Component {
@@ -29,10 +38,11 @@ export class Astronaut extends Component {
 
     private readonly LINEAL_VELOCITY_WALK = 0.1; // 0.05
     private readonly DIAGONAL_VELOCITY_WALK = 0.1414; // 0.0707
-    //private readonly LINEAL_VELOCITY_RUN = 0.15; // 0.075
     private readonly LINEAL_VELOCITY_RUN = 0.15;
     private readonly DIAGONAL_VELOCITY_RUN = 0.1590; // 0.10605
-    private readonly RUN_MULTIPLIER = 3;
+    private readonly RUN_MULTIPLIER = 2;
+
+    private readonly ITEM_HEALTH_POINTS = 5;
 
     private linealVelocity: number = 0;
     private diagonalVelocity: number = 0;
@@ -70,6 +80,12 @@ export class Astronaut extends Component {
 
     @property(HubManager)
     private hubManager: HubManager;
+
+    @property(HubManagerExtraGame)
+    private hubManagerExtraGame: HubManagerExtraGame;
+
+    @property({ type: GAME_MODE })
+    private gameMode: GAME_MODE = GAME_MODE.SURVIVAL;
 
 
     start(): void {
@@ -177,17 +193,36 @@ export class Astronaut extends Component {
 
     private triggerEnter(event: ICollisionEvent): void {
         if (event.otherCollider.node.name == "Item") {
-            this.itemAudioSource.play();
-            event.otherCollider.node.destroy();
-            this.currentItems += 1;
-            this.hubManager.setItem(this.currentItems);
-
-            if (this.currentItems >= this.itemsInGame) {
-                director.loadScene("Win");
+            if (this.gameMode == GAME_MODE.SURVIVAL) {
+                this.grabTheItem(event);
+            } else if (this.gameMode == GAME_MODE.TIME_TRIAL) {
+                this.grabTheGas(event)
             }
-            
         }
     }
+
+    private grabTheGas(event: ICollisionEvent) {
+
+        let item = event.otherCollider.getComponent(Item);
+
+        if (item != null) {
+            this.itemAudioSource.play();
+            this.hubManagerExtraGame.addHealth(this.ITEM_HEALTH_POINTS);
+            item.disableItem();
+        }
+    }
+
+    private grabTheItem(event: ICollisionEvent) {
+        this.itemAudioSource.play();
+        event.otherCollider.node.destroy();
+        this.currentItems += 1;
+        this.hubManager.setItem(this.currentItems);
+
+        if (this.currentItems >= this.itemsInGame) {
+            director.loadScene("Win");
+        }
+    }
+
 
     private collisionExit(event: ICollisionEvent): void {
         if (event.otherCollider.node.name == "AstronautEnemy") {
@@ -203,7 +238,9 @@ export class Astronaut extends Component {
     }
 
     private mouseDown(event: EventMouse): void {
-        this.attack();
+        if (this.gameMode == GAME_MODE.SURVIVAL) {
+            this.attack();
+        }
     }
 
     private keyPressDown(event: EventKeyboard): void {
@@ -221,19 +258,29 @@ export class Astronaut extends Component {
                 this.movingDirection.right = this.movingDirection.left == 2 ? 1 : 2;
                 break;
             case this.KEYCODE_SPACEBAR:
-                this.jump();
+                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                    this.jump();
+                }
                 break;
             case this.KEYCODE_SHIFT:
-                this.isRunning = true;
+                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                    this.isRunning = true;
+                }
                 break;
             case this.KEYCODE_CTRL:
-                this.crouch();
+                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                    this.crouch();
+                }
                 break;
             case this.KEYCODE_Z:
-                this.lieDown();
+                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                    this.lieDown();
+                }
                 break;
             case this.KEYCODE_Q:
-                this.attack();
+                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                    this.attack();
+                }
                 break;
         }
 
