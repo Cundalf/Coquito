@@ -4,6 +4,7 @@ import { HubManager } from './HubManager';
 import { HubManagerExtraGame } from './HubManagerExtraGame';
 import { Item } from './Item';
 import { MovingDirection, DIRECTIONS } from './MovingDirection';
+import PauseGame from './PauseGame';
 const { ccclass, property } = _decorator;
 
 enum GAME_MODE {
@@ -35,6 +36,7 @@ export class Astronaut extends Component {
     private readonly KEYCODE_CTRL = 17;
     private readonly KEYCODE_Z = 90;
     private readonly KEYCODE_Q = 81;
+    private readonly KEYCODE_ESC = 27;
 
     private readonly LINEAL_VELOCITY_WALK = 0.1; // 0.05
     private readonly DIAGONAL_VELOCITY_WALK = 0.1414; // 0.0707
@@ -256,6 +258,9 @@ export class Astronaut extends Component {
                 break;
             case this.KEYCODE_D:
                 this.movingDirection.right = this.movingDirection.left == 2 ? 1 : 2;
+                break;
+            case this.KEYCODE_ESC:
+                PauseGame.pause();
                 break;
             case this.KEYCODE_SPACEBAR:
                 if (this.gameMode == GAME_MODE.SURVIVAL) {

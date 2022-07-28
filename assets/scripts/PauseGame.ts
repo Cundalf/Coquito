@@ -1,10 +1,8 @@
-import { _decorator, Component, game } from 'cc';
-const { ccclass } = _decorator;
+import { _decorator, game } from 'cc';
 
-@ccclass('PauseGame')
-export class PauseGame extends Component {
+export default abstract class PauseGame {
 
-    pause() {
+    static pause() {
         if (game.isPaused()) {
             game.resume();
         } else {
