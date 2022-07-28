@@ -105,6 +105,126 @@
     },
     "dumpMaterials": false,
     "depthWriteInAlphaModeBlend": false,
-    "useVertexColors": true
+    "useVertexColors": true,
+    "materials": {
+      "772f1305-24af-4624-94c2-7fb9d4c74ab6@cb799": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "albedoScale": {
+              "__type__": "cc.Vec3",
+              "x": 0.56078428,
+              "y": 0.568627477,
+              "z": 0.600000024
+            },
+            "roughness": 0.6,
+            "metallic": 0.1
+          },
+          {},
+          {}
+        ]
+      },
+      "772f1305-24af-4624-94c2-7fb9d4c74ab6@7bf25": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "albedoScale": {
+              "__type__": "cc.Vec3",
+              "x": 0.388235301,
+              "y": 0.400000006,
+              "z": 0.447058797
+            },
+            "roughness": 0.6,
+            "metallic": 0.2
+          },
+          {},
+          {}
+        ]
+      }
+    }
   }
 }

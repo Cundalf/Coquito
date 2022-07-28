@@ -566,7 +566,7 @@
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 144.57831325301203,
+    "_orthoHeight": 406.8706811451135,
     "_near": 1,
     "_far": 2000,
     "_color": {
@@ -14847,7 +14847,7 @@
   },
   {
     "__type__": "cc.SkyboxInfo",
-    "_envLightingType": 0,
+    "_envLightingType": 2,
     "_envmapHDR": {
       "__uuid__": "8daa3d4e-b4c5-4b4e-8812-17eeb9956c24@b47c0",
       "__expectedType__": "cc.TextureCube"
