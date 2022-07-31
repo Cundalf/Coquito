@@ -1,16 +1,12 @@
 import { _decorator, Component, Animation, EventKeyboard, SkeletalAnimation, Input, input, CylinderCollider, ICollisionEvent, EventMouse, Camera, AudioSource, director, Enum } from 'cc';
 import { Enemy } from './Enemy';
+import { GAME_MODE } from './GameManager';
 import { HubManager } from './HubManager';
 import { HubManagerExtraGame } from './HubManagerExtraGame';
 import { Item } from './Item';
 import { MovingDirection, DIRECTIONS } from './MovingDirection';
 import PauseGame from './PauseGame';
 const { ccclass, property } = _decorator;
-
-enum GAME_MODE {
-    SURVIVAL,
-    TIME_TRIAL
-}
 
 enum ASTRONAUT_ANIMS {
     IDLE,
@@ -87,7 +83,7 @@ export class Astronaut extends Component {
     private hubManagerExtraGame: HubManagerExtraGame;
 
     @property({ type: GAME_MODE })
-    private gameMode: GAME_MODE = GAME_MODE.SURVIVAL;
+    private astronautGameMode: GAME_MODE = GAME_MODE.SURVIVAL;
 
 
     start(): void {
@@ -195,9 +191,9 @@ export class Astronaut extends Component {
 
     private triggerEnter(event: ICollisionEvent): void {
         if (event.otherCollider.node.name == "Item") {
-            if (this.gameMode == GAME_MODE.SURVIVAL) {
+            if (this.astronautGameMode == GAME_MODE.SURVIVAL) {
                 this.grabTheItem(event);
-            } else if (this.gameMode == GAME_MODE.TIME_TRIAL) {
+            } else if (this.astronautGameMode == GAME_MODE.TIME_TRIAL) {
                 this.grabTheGas(event)
             }
         }
@@ -240,7 +236,7 @@ export class Astronaut extends Component {
     }
 
     private mouseDown(event: EventMouse): void {
-        if (this.gameMode == GAME_MODE.SURVIVAL) {
+        if (this.astronautGameMode == GAME_MODE.SURVIVAL) {
             this.attack();
         }
     }
@@ -263,27 +259,27 @@ export class Astronaut extends Component {
                 PauseGame.pause();
                 break;
             case this.KEYCODE_SPACEBAR:
-                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                if (this.astronautGameMode == GAME_MODE.SURVIVAL) {
                     this.jump();
                 }
                 break;
             case this.KEYCODE_SHIFT:
-                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                if (this.astronautGameMode == GAME_MODE.SURVIVAL) {
                     this.isRunning = true;
                 }
                 break;
             case this.KEYCODE_CTRL:
-                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                if (this.astronautGameMode == GAME_MODE.SURVIVAL) {
                     this.crouch();
                 }
                 break;
             case this.KEYCODE_Z:
-                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                if (this.astronautGameMode == GAME_MODE.SURVIVAL) {
                     this.lieDown();
                 }
                 break;
             case this.KEYCODE_Q:
-                if (this.gameMode == GAME_MODE.SURVIVAL) {
+                if (this.astronautGameMode == GAME_MODE.SURVIVAL) {
                     this.attack();
                 }
                 break;

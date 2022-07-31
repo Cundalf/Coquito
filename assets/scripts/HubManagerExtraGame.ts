@@ -49,7 +49,7 @@ export class HubManagerExtraGame extends Component {
 
         this.updateHealthPB();
 
-        if (this.healthPB.progress >= 1) {
+        if (this.healthPB.progress <= 0) {
             director.loadScene("GameOver");
         }
     }

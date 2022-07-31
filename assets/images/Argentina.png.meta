@@ -2,7 +2,7 @@
   "ver": "1.0.23",
   "importer": "image",
   "imported": true,
-  "uuid": "68e34597-cfdd-4e62-99b2-53449a12b769",
+  "uuid": "fc767a8d-d55f-4c43-9c51-075cd7ab000d",
   "files": [
     ".json",
     ".png"
@@ -10,8 +10,8 @@
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "68e34597-cfdd-4e62-99b2-53449a12b769@6c48a",
-      "displayName": "spanish",
+      "uuid": "fc767a8d-d55f-4c43-9c51-075cd7ab000d@6c48a",
+      "displayName": "Argentina",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -22,7 +22,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "68e34597-cfdd-4e62-99b2-53449a12b769"
+        "imageUuidOrDatabaseUri": "fc767a8d-d55f-4c43-9c51-075cd7ab000d"
       },
       "ver": "1.0.21",
       "imported": true,
@@ -33,8 +33,8 @@
     },
     "f9941": {
       "importer": "sprite-frame",
-      "uuid": "68e34597-cfdd-4e62-99b2-53449a12b769@f9941",
-      "displayName": "spanish",
+      "uuid": "fc767a8d-d55f-4c43-9c51-075cd7ab000d@f9941",
+      "displayName": "Argentina",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
@@ -45,17 +45,17 @@
         "offsetY": 0,
         "trimX": 0,
         "trimY": 0,
-        "width": 1575,
-        "height": 1049,
-        "rawWidth": 1575,
-        "rawHeight": 1049,
+        "width": 640,
+        "height": 360,
+        "rawWidth": 640,
+        "rawHeight": 360,
         "borderTop": 0,
         "borderBottom": 0,
         "borderLeft": 0,
         "borderRight": 0,
         "packable": true,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "68e34597-cfdd-4e62-99b2-53449a12b769@6c48a",
+        "imageUuidOrDatabaseUri": "fc767a8d-d55f-4c43-9c51-075cd7ab000d@6c48a",
         "atlasUuid": ""
       },
       "ver": "1.0.9",
@@ -70,6 +70,6 @@
     "type": "sprite-frame",
     "fixAlphaTransparencyArtifacts": true,
     "hasAlpha": true,
-    "redirect": "68e34597-cfdd-4e62-99b2-53449a12b769@f9941"
+    "redirect": "fc767a8d-d55f-4c43-9c51-075cd7ab000d@f9941"
   }
 }

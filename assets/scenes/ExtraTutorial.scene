@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "GameOver",
+    "_name": "ExtraTutorial",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -29,9 +29,9 @@
     "_prefab": null,
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 31
+      "__id__": 30
     },
-    "_id": "fc0cc338-ea5d-4e9b-926d-2ff82e0f37e5"
+    "_id": "f17f62cc-b803-49b2-94a3-b651fbfdb3ed"
   },
   {
     "__type__": "cc.Node",
@@ -85,13 +85,15 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "scene": 3,
-    "gameOverGameText": {
+    "scene": 4,
+    "gameOverGameText": null,
+    "extraTutorial": {
       "__id__": 4
     },
-    "goToMainMenuLabel": {
+    "extraTutorialPlay": {
       "__id__": 18
     },
+    "goToMainMenuLabel": null,
     "_id": "28xYyFmSJERY+1L44kGdtU"
   },
   {
@@ -114,7 +116,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "No cumpliste tu proposito\nMuchos terrestres estan ahora a su propia suerte...",
+    "_string": "",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 30,
@@ -135,7 +137,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "GameOverText",
+    "_name": "ExtraTutorialLabel",
     "_objFlags": 0,
     "_parent": {
       "__id__": 6
@@ -436,7 +438,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "GameOverLabel",
+    "_name": "Title",
     "_objFlags": 0,
     "_parent": {
       "__id__": 6
@@ -521,7 +523,7 @@
       "b": 0,
       "a": 255
     },
-    "_string": "Game Over",
+    "_string": "Extra",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 80,
@@ -683,7 +685,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "Volver Al Menu",
+    "_string": "Jugar",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 30,
@@ -827,7 +829,7 @@
     },
     "component": "",
     "_componentId": "a55e4CznghJBaXw8bHPOkyG",
-    "handler": "returnToMenu",
+    "handler": "startExtraGame",
     "customEventData": ""
   },
   {
@@ -939,9 +941,6 @@
     "_components": [
       {
         "__id__": 29
-      },
-      {
-        "__id__": 30
       }
     ],
     "_prefab": null,
@@ -1015,39 +1014,21 @@
     "_id": "7dWQTpwS5LrIHnc1zAPUtf"
   },
   {
-    "__type__": "cc.AudioSource",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 28
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "_clip": {
-      "__uuid__": "9bcae66e-eac4-42c6-98b1-b71d4cf7f578",
-      "__expectedType__": "cc.AudioClip"
-    },
-    "_loop": true,
-    "_playOnAwake": true,
-    "_volume": 0.15,
-    "_id": "424E176HNG4pqousWxefDs"
-  },
-  {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 32
+      "__id__": 31
     },
     "shadows": {
-      "__id__": 33
+      "__id__": 32
     },
     "_skybox": {
-      "__id__": 34
+      "__id__": 33
     },
     "fog": {
-      "__id__": 35
+      "__id__": 34
     },
     "octree": {
-      "__id__": 36
+      "__id__": 35
     }
   },
   {
