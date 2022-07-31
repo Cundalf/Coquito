@@ -56,6 +56,11 @@ export class Translate extends Component {
     @property(Label)
     private goToMainMenuLabel: Label;
 
+    @property(Label)
+    private creditsButton: Label;
+
+    @property(Label)
+    private creditsTitle: Label;
 
     onLoad() {
 
@@ -87,6 +92,8 @@ export class Translate extends Component {
                 this.menuControlsText.string = language.getControlsText();
                 this.playButtonText.string = language.getPlay().toUpperCase();
                 this.extraButtonText.string = language.getExtra().toUpperCase();
+                this.creditsButton.string = language.getCredits().toUpperCase();
+                this.creditsTitle.string = language.getCredits();
                 break;
             case SCENES.WIN:
                 if (this.gameManager.currentGameMode == GAME_MODE.SURVIVAL) {

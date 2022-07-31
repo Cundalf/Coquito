@@ -14,6 +14,7 @@ export class LanguageManager {
     private _win_title: string;
     private _back_to_menu: string;
     private _extra_play: string;
+    private _credits: string;
 
     static readonly ENGLISH  = new LanguageManager()
         .synopsisTitle('Synopsis')
@@ -29,7 +30,8 @@ export class LanguageManager {
         .extraTutorial("Things are complicated. Coquito must put up with them coming to save him, he must put up with it no matter what...")
         .winTitle("You Did")
         .backToTheMenu("Back to menu")
-        .extraPlay("Play");
+        .extraPlay("Play")
+        .credits("Credits");
 
     static readonly SPANISH = new LanguageManager()
         .synopsisTitle('Sinopsis')
@@ -45,7 +47,8 @@ export class LanguageManager {
         .extraTutorial("Las cosas estan complicadas. Coquito debe aguantar a que vengan a salvarlo, debe aguantar como sea...")
         .winTitle("Lo has logrado")
         .backToTheMenu("Volver al menu")
-        .extraPlay("Jugar");
+        .extraPlay("Jugar")
+        .credits("Creditos");
 
     newLang(): LanguageManager {
         return new LanguageManager();
@@ -175,6 +178,15 @@ export class LanguageManager {
 
     getExtraPlay(): string {
         return this._extra_play;
+    }
+
+    credits(text: string): LanguageManager {
+        this._credits = text;
+        return this;
+    }
+
+    getCredits(): string {
+        return this._credits;
     }
 }
 
