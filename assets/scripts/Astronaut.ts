@@ -244,7 +244,7 @@ export class Astronaut extends Component {
     private keyPressDown(event: EventKeyboard): void {
         switch (event.keyCode) {
             case this.KEYCODE_W:
-                this.movingDirection.top = this.movingDirection.left == 2 ? 1 : 2;
+                this.movingDirection.top = this.movingDirection.down == 2 ? 1 : 2;
                 break;
             case this.KEYCODE_A:
                 this.movingDirection.left = this.movingDirection.right == 2 ? 1 : 2;
