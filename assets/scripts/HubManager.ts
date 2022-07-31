@@ -15,7 +15,7 @@ export class HubManager extends Component {
     private maxHealth: number = 4;
 
     @property(Number)
-    private targetTime: number = 180;
+    private targetTime: number = 120;
 
     @property(ProgressBar)
     private healthPB: ProgressBar;
